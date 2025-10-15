@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Web - Ingeniería en TI</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- 
+usé la etiqueta <header> para colocar y que resaltara el nombre de la carrera y la materia, esta 
+etiqueta es la más adecuada para poner títulos y encabezados importantes en una página web
+-->
+ <div class="logo-header">
+        <img src="imagenes/upsinlogo.png" alt="Logo UPSIN blanco">
+    </div>
+        <h1>Ingeniería en Tecnologías de la Información</h1>
+        <h2>Programación Web 💻</h2>
+
+        <nav>
+            <!-- 
+puse <nav> aquí porque es la etiqueta que se usa para el menú de navegación, 
+ahí van los enlaces que llevan a las diferentes secciones de la página
+-->
+            <a href="#programa">Programa Educativo</a>
+            <a href="#asignatura">Asignatura</a>
+            <div class="dropdown">
+                <a href="#unidades">Unidades ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="#unidad1">Unidad I</a></li>
+                    <li><a href="#unidad2">Unidad II</a></li>
+                    <li><a href="#unidad3">Unidad III</a></li>
+                    <li><a href="#unidad4">Unidad IV</a></li>
+                </ul>
+            </div>
+            <a href="#referencias">Referencias</a>
+        </nav>
+        
+    </header>
+
+    <main class="contenido-principal">
+        <!-- 
+<main> encierra el contenido principal de la página, es útil para distinguir
+el proposito principal de la página, aquí lo usé para contener toda la nformación del plan
+de estudios
+-->
+        <div class="contenido">
+            <!-- PROGRAMA EDUCATIVO -->
+            <section id="programa">
+                <!-- 
+<section> agrupa información por apartados, lo usé para dividir el contenido 
+en secciones para que cada subtitilo importante tuviera su estilo y espacio
+-->
+                <h2>PROGRAMA EDUCATIVO</h2>
+                <!-- 
+usé <article> para poner contenido dentro de las secciones y dentro del aside,
+asi se mantiene el contenido organizado dentro de cada sección
+-->
+                <article>
+                    <p><strong>Ingeniería en Tecnologías de la Información</strong> forma profesionales capaces de
+                        diseñar,
+                        implementar y gestionar soluciones tecnológicas innovadoras que respondan a las necesidades del
+                        entorno empresarial y social.</p>
+                </article>
+
+                <div class="video-container">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/cDNMe56I8LU"
+                        title="¿Conoces la carrera de Ingeniería en Tecnologías de la Información e Innovación Digital?"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="video-caption">¿Conoces la carrera de Ingeniería en Tecnologías de la Información e
+                        Innovación
+                        Digital?</p>
+                </div>
+            </section>
+            <!-- ASIGNATURA -->
+            <section id="asignatura">
+                <h2>ASIGNATURA</h2>
+                <article>
+                    <p><strong>Propósito:</strong> El alumno implementará sistemas empleando tecnologías web para
+                        extender la disponibilidad y alcances de los servicios de la organización.</p>
+                    <figure>
+                        <img src="imagenes/webdesign.jpg" alt="Ilustración de diseño web y programación web">
+                        <figcaption><em>Ilustración de diseño y programación web</em></figcaption>
+                    </figure>
+
+                    <p>La asignatura de <strong>Programación Web</strong> se cursa en el <strong>séptimo
+                            cuatrimestre</strong> de la carrera de Ingeniería en Tecnologías de la Información.</p>
+                </article>
+
+                <div class="horas-container">
+                    <h3>Distribución de horas</h3>
+                    <table class="tabla-horas">
+                        <thead>
+                            <tr>
+                                <th>UNIDAD</th>
+                                <th>HORAS DEL SABER</th>
+                                <th>HORAS DEL SABER HACER</th>
+                                <th>TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>I. Introducción a los sistemas web</td>
+                                <td>2</td>
+                                <td>6</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>II. Programación del lado del cliente</td>
+                                <td>5</td>
+                                <td>10</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>III. Programación del lado del servidor</td>
+                                <td>10</td>
+                                <td>22</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>IV. Autenticación de usuarios</td>
+                                <td>5</td>
+                                <td>15</td>
+                                <td>20</td>
+                            </tr>
+                            <tr class="fila-total">
+                                <td><strong>TOTALES</strong></td>
+                                <td><strong>22</strong></td>
+                                <td><strong>53</strong></td>
+                                <td><strong>75</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- UNIDADES -->
+            <section id="unidades">
+                <h2>UNIDADES DE APRENDIZAJE</h2>
+                <article id="unidad1">
+                    <h3>Unidad I: Introducción a los sistemas web</h3>
+                    <p><strong>Propósito:</strong> Configurar entornos de trabajo para el desarrollo web.</p>
+                    <details>
+                        <summary>Temas</summary>
+                        <ul>
+                            <li>Introducción a la programación web</li>
+                            <li>Configuración de servidores de desarrollo web</li>
+                            <li>Configuración de servidores de producción</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Proceso de evaluación</summary>
+                        <ul>
+                            <p><strong>Reporte digital sobre cómo instalar servidores web</strong></p>
+                            <li>Evidencia: El reporte debe incluir los pasos, capturas de pantalla y una lista del
+                                software usado.</li>
+                            <li>Lugar: Práctica en el laboratorio, usando una computadora.</li>
+                            <li>Evaluación: Caso práctico y rúbrica.</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article id="unidad2">
+                    <h3>Unidad II: Programación del lado del cliente</h3>
+                    <p><strong>Propósito:</strong> Elaborar documentos responsivos y dinámicos del lado del cliente para
+                        el despliegue del contenido del sistema web.</p>
+                    <details>
+                        <summary>Temas</summary>
+                        <ul>
+                            <li>Maquetación semántica</li>
+                            <li>Hojas de estilo con documentos HTML responsivos</li>
+                            <li>JavaScript en documentos HTML dinámicos</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Proceso de evaluación</summary>
+                        <ul>
+                            <p><strong>Reporte digital sobre la elaboración de un sistema web</strong></p>
+                            <li>Evidencia: El reporte debe incluir el código HTML, la hoja de estilos (CSS), los
+                                archivos del proyecto y la descripción del proceso.</li>
+                            <li>Lugar: Práctica en el laboratorio, usando una computadora.</li>
+                            <li>Evaluación: Caso práctico y rúbrica.</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article id="unidad3">
+                    <h3>Unidad III: Programación del lado del servidor</h3>
+                    <p><strong>Propósito:</strong> realizará la programación y monitoreo de aplicaciones en servidores
+                        web para complementar la funcionalidad del sistema web.</p>
+                    <details>
+                        <summary>Temas</summary>
+                        <ul>
+                            <li>Introducción a la programación del lado del servidor </li>
+                            <li>Interfaz de programación de aplicaciones y programación de tres niveles </li>
+                            <li>Acceso a servicios </li>
+                            <li>Monitoreo y estadísticas del sistema web </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Proceso de evaluación</summary>
+                        <ul>
+                            <p><strong>Reporte digital a partir de un caso práctico de programación del lado del
+                                    servidor</strong></p>
+                            <li>Evidencia: El reporte debe incluir el código fuente, la documentación, capturas de
+                                pantalla de la conexión segura y los registros de monitoreo.</li>
+                            <li>Lugar: Se realizará como una práctica en el taller, usando una computadora.</li>
+                            <li>Evaluación: Caso práctico y rúbrica.</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article id="unidad4">
+                    <h3>Unidad IV: Autenticación de usuarios</h3>
+                    <p><strong>Propósito:</strong> Implementará mecanismos de autenticación de usuarios para el acceso
+                        al sistema web.</p>
+                    <details>
+                        <summary>Temas</summary>
+                        <ul>
+                            <li>Autenticación e interfaces seguras</li>
+                            <li>Manejo de excepciones</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Proceso de evaluación</summary>
+                        <ul>
+                            <p><strong>Reporte digital a partir de un caso práctico de autenticación de usuarios en el
+                                    servidor de aplicaciones web</strong></p>
+                            <li>Evidencia: El reporte debe incluir la descripción del proceso para implementar seguridad
+                                y el código fuente del manejo de excepciones.</li>
+                            <li>Lugar: Se realizará como una práctica en el taller, usando una computadora.</li>
+                            <li>Evaluación: Caso práctico y rúbrica.</li>
+                        </ul>
+                    </details>
+                </article>
+            </section>
+
+
+            <!-- REFERENCIAS -->
+            <section id="referencias">
+                <h2>REFERENCIAS</h2>
+                <ul>
+                    <li>Prettyman, S. (2016). <em>Learn PHP 7, Object-Oriented Modular Programming using HTML5, CSS3,
+                            JavaScript, XML, JSON and MySQL. Apress.</em> Apress.</li>
+                    <li>Sanders, W. (2013). <em>Learning PHP Design Patterns.</em> O'Reilly.</li>
+                    <li>Clemente Bonilla, P. (2014). <em>Diseño Web Adaptativo.</em>Anaya Multimedia.</li>
+                    <li>Refsnes Data. (s.f.). <em>w3schools.com</em><a href="https://www.w3schools.com/default.asp"
+                            target="_blank"> w3schools.com</a></li>
+                    <li>Quispe Rodriguez, A. (2013). <em>Diseno de paginas Web universitarias con el apoyo de la
+                            Ingenieria de Usabilidad.</em> La Web del Programador. <a
+                            href="https://www.lawebdelprogramador.com/pdf/544-Paper-SOCOTE-2013-Diseno-de-paginasWeb-universitarias-con-el-apoyo-de-la-Ingenieria-de-Usabilidad.html"
+                            target="_blank">LWP Comunidad de Programadares </a></li>
+                    <li>Luján-Mora, S. (s.f.) <em>Programación de aplicaciones web: historia, principios básicos y
+                            clientes web.</em> ResearchGate. <a
+                            href="https://www.researchgate.net/publication/260399527_Programacion_de_aplicaciones_web_historia_principios_basicos_y_clientes_web"
+                            target="_blank">researchgate.net</a></li>
+                </ul>
+            </section>
+        </div>
+        <aside class="aside-noticias">
+            <!-- 
+con <aside> pude poner información extra para complementar el contenido principal,
+y para poder acomodar esta sección a un lado más fácil
+-->
+            <h2>ANUNCIOS📣</h2>
+
+            <article class="noticia">
+                <h3>5to Foro Nacional de Tecnologías de la Información y Sistemas Computacionales</h3>
+                <p><strong>"Tecnologías Disruptivas y el Futuro del Trabajo:</strong> Preparando a la Nueva Fuerza
+                    Laboral Digital".</p>
+                <a href="https://2025.fonatiutp.org.mx/inicio" target="_blank">Ver más detalles</a>
+            </article>
+
+            <article class="noticia">
+                <h3>Concurso de Programación Foro de TiC's 2025</h3>
+                <p>Este evento es más que una competencia: es una oportunidad para <strong>aprender, crecer, compartir
+                        conocimientos</strong> y, sobre todo, disfrutar del increíble mundo de la programación.</p>
+                <a href="https://omegaup.com/login/?redirect=%2Farena%2FFOROITICONCURSOINT25%2F%3FfromLogin#problems"
+                    target="_blank">Ver más detalles</a>
+            </article>
+
+            <article class="noticia">
+                <h3>Estancías próximas</h3>
+                <p>No olvides consultar el SIIAA para estar al tanto de tu inscripción para las estancías.</p>
+                <figure class="logo-siiaa">
+                    <img src="imagenes/siiaa.png" alt="Logo de portal SIIAA">
+                </figure>
+                <a href="https://siiaa.mx/index.php/login/login_siiaa#servicio_social_informe" target="_blank">Visitar
+                    SIIAA</a>
+            </article>
+
+            <article class="noticia">
+                <h3>¡SE NOS CASAN!</h3>
+                <p>Andrea y Emiliano, la <strong>pareja ingeniera</strong> que revolucionó el mundo entero.</p>
+                <a href="https://drive.google.com/file/d/146i5zs0dUGZh8pORxWid8BQB3bUbhYZ3/view?usp=sharing"
+                    target="_blank">Ver más</a>
+            </article>
+
+            <article class="noticia">
+                <h3>Equipo de 7-1</h3>
+                <p>Conoce a los talentosos integrantes del equipo de TI7-1, siempre listos para enfrentar nuevos desafíos.</p>
+                <figure class="logo-siiaa">
+                    <img src="imagenes/compañeros.png" alt="El equipo de TI7-1 de siempre">
+                </figure>
+                <a href="#" target="_blank">Conocer más</a>
+            </article>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-ups">
+        <!-- 
+usé <footer> para cerrar la estructura del sitio y poner información de contacto 
+-->
+        <div class="footer-contacto-academico">
+            <h3>Contacto Académico</h3>
+            <p><strong>Docente:</strong> Roberto Antonio Martínez Thompson</p>
+            <p><strong>Correo:</strong> <span> rmartinez@upsin.edu.mx </span></p>
+            <p><strong>Director de Carrera:</strong> Rodolfo Ostos Robles</p>
+            <p><strong>Correo:</strong> <span>rostos@upsin.edu.mx</span></p>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="imagenes/logoblanco2.png" alt="Logo UPSIN">
+            </div>
+            <div class="footer-contacto">
+                <p>Carretera Municipal Libre Mazatlán Higueras Km 3, Col. Genaro Estrada, C.P. 82199, Mazatlán, Sinaloa.
+                </p>
+                <p><strong>Tel:</strong> (669) 180 0695</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
